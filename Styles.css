@@ -1,0 +1,233 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 5;
+    padding: 5;
+}
+
+
+
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styling for main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about, .featured-books {
+    margin-bottom: 30px;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for the Featured Books section */
+.featured-books {
+    display: flex; /* Display the books in a flex container */
+    flex-wrap: wrap; /* Wrap the items to the next line when there's not enough space */
+    justify-content: space-between; /* Add space between the book containers */
+}
+
+.honorable-recommendations {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the section container */
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Style the text container (left side) */
+.text-container {
+  flex: 1; /* Take up available space */
+}
+
+/* Style the heading (h2) */
+.text-container h2 {
+  text-align: left;
+  font-size: 50px; /* Adjust the font size as needed */
+  color: white; /* Text color */
+}
+
+/* Style the image container (right side) */
+.image-container {
+  flex: 1; /* Take up available space */
+  text-align: right; /* Align the image to the right */
+}
+
+/* Style the image */
+.image-container img {
+  max-width: 60%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Style the centered article container */
+.centered-article {
+  text-align: center;
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Style the text within the article */
+.centered-article p {
+  font-size: 40px; /* Adjust the font size as needed */
+  color: #333; /* Text color */
+}
+
+
+/* Style for each book container in the Featured Books section */
+.book {
+    width: calc(20.33% - 20px); /* Adjust the width and margin as needed for spacing */
+    margin-right: 20px; /* Add space between book containers */
+    margin-bottom: 20px; /* Add space below each row of books */
+    padding: 10px; /* Optional: Adds padding to the inside of each book container */
+    text-align: center; /* Centers the book elements horizontally */
+    border: 1px solid #ddd; /* Optional: Adds a border around each book */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow effect */
+}
+
+/* ... rest of your CSS ... */
+
+
+/* Optional: Style for book titles */
+.book h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Optional: Style for book descriptions */
+.book p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
+
+
+/* Style for book containers in the Featured Books section */
+.book {
+    max-width: 300px; /* Adjust this value to control the width of each book */
+    margin: 0 auto 20px; /* Adds margin at the bottom of each book to create space */
+    padding: 10px; /* Optional: Adds padding to the inside of each book container */
+    text-align: center; /* Centers the book elements horizontally */
+    border: 1px solid #ddd; /* Optional: Adds a border around each book */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow effect */
+}
+
+/* Style for book images */
+.book .book-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Style for book images in the Featured Books section */
+.book .book-image {
+    max-width: 150px; /* Adjust this value to fit your design */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.book .book-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+/* Style for the feedback form */
+.feedback-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 1200px; /* Adjust the max-width to your liking */
+    margin: 0 auto; /* Center-align the form horizontally */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Style for the feedback form heading */
+.feedback-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Change text color to slight black (#333) */
+}
+
+/* Style for the label elements */
+.feedback-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* Change text color to slight black (#333) */
+}
+
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.feedback-form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.feedback-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

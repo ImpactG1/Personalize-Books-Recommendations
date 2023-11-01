@@ -1,0 +1,160 @@
+/* Style the top navigation bar */
+.top-bar {
+  background-color: #fff; /* White background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #000; /* Black text color */
+  font-family: Arial, sans-serif; /* Choose your preferred font */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the logo */
+.logo img {
+  width: 200px; /* Logo width */
+  height: 100px; /* Logo height */
+}
+
+/* Style the search bar */
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000; /* Black border */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar button[type="submit"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px; /* Adjust the search icon size */
+}
+
+/* Style the login button */
+.login-button a {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #fff; /* White background */
+  border: none;
+  color: #000; /* Black text */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover {
+  background-color: #ccc; /* Hover background color */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000; /* Black text */
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc; /* Hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Your existing CSS styles for the top bar */
+
+/* Style the ticker container */
+.ticker-container {
+  background-color: #f2f2f2; /* Background color for the ticker */
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+/* Style the ticker content */
+.ticker {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: ticker-scroll 30s linear infinite; /* Adjust speed (30s) */
+}
+
+/* Style each ticker item */
+.ticker-item {
+  display: inline-block;
+  margin-right: 50px; /* Adjust spacing between items */
+  font-family: "Arial", sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+  font-weight: normal; /* Font weight */
+  color: #000; /* Text color */
+}
+
+/* Style the detail button */
+.detail-button {
+  background-color: #3498DB; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Modal styles (for displaying more information) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
